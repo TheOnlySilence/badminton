@@ -185,6 +185,94 @@ const authorsTableData = {
           Edit
         </SoftTypography>
       ),
+    }, {
+      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
+      职位: <Function job="成员" />,
+      status: (
+        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
+      ),
+      有效至: (
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          08/31/2023
+        </SoftTypography>
+      ),
+      action: (
+        <SoftTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Edit
+        </SoftTypography>
+      ),
+    }, {
+      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
+      职位: <Function job="成员" />,
+      status: (
+        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
+      ),
+      有效至: (
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          08/31/2023
+        </SoftTypography>
+      ),
+      action: (
+        <SoftTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Edit
+        </SoftTypography>
+      ),
+    }, {
+      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
+      职位: <Function job="成员" />,
+      status: (
+        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
+      ),
+      有效至: (
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          08/31/2023
+        </SoftTypography>
+      ),
+      action: (
+        <SoftTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Edit
+        </SoftTypography>
+      ),
+    }, {
+      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
+      职位: <Function job="成员" />,
+      status: (
+        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
+      ),
+      有效至: (
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          08/31/2023
+        </SoftTypography>
+      ),
+      action: (
+        <SoftTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Edit
+        </SoftTypography>
+      ),
     },
   ],
 };

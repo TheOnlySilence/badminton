@@ -38,6 +38,7 @@ import Table from "examples/MatchHistory/Table";
 
 // Data
 import authorsTableData from "layouts/profile/data/matchHistoryData";
+import WorkWithTheRockets from "layouts/profile/components/WorkWithTheRockets";
 
 
 function Overview() {
@@ -51,7 +52,7 @@ function Overview() {
           <Grid item xs={12} md={6} xl={4}>
             <ProfileInfoCard
               title="profile information"
-              description="Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+              description="Blah blah blah"
               info={{
                 fullName: "HanYi Jiang",
                 mobile: "484-000-1111",
@@ -79,7 +80,7 @@ function Overview() {
             />
           </Grid>
           <Grid item xs={12} md={6} xl={4}>
-            <ProfileInfoCard
+            <EquipmentInfoCard
               title="Equipment Information"
               info={{
                 Racket: "Nanoflare 800",
@@ -91,7 +92,7 @@ function Overview() {
             />
           </Grid>
           <Grid item xs={12} md={6} xl={4}>
-            <PlatformSettings />
+            <WorkWithTheRockets />
           </Grid>
         </Grid>
       </SoftBox>
