@@ -85,7 +85,7 @@ function Overview() {
               info={{
                 Racket: "Nanoflare 800",
                 String: "BG80",
-                Tention: "25-27",
+                Tension: "25-27",
                 Shoes: "Yonex Power cushion 65Z",
               }}
               action={{ route: "", tooltip: "Edit Profile" }}

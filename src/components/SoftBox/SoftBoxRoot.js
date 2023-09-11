@@ -19,7 +19,7 @@ import { styled } from "@mui/material/styles";
 
 export default styled(Box)(({ theme, ownerState }) => {
   const { palette, functions, borders, boxShadows } = theme;
-  const { variant, bgColor, color, opacity, borderRadius, shadow } = ownerState;
+  const { overflow,variant, bgColor, color, opacity, borderRadius, shadow } = ownerState;
 
   const { gradients, grey, white } = palette;
   const { linearGradient } = functions;
@@ -110,10 +110,11 @@ export default styled(Box)(({ theme, ownerState }) => {
   }
 
   return {
+    overflow,
     opacity,
     background: backgroundValue,
     color: colorValue,
     borderRadius: borderRadiusValue,
-    boxShadow: boxShadowValue,
-  };
+    boxShadow: boxShadowValue
+    };
 });

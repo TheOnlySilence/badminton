@@ -22,11 +22,11 @@ import PropTypes from "prop-types";
 import SoftBoxRoot from "components/SoftBox/SoftBoxRoot";
 
 const SoftBox = forwardRef(
-  ({ variant, bgColor, color, opacity, borderRadius, shadow, ...rest }, ref) => (
+  ({overflow, variant, bgColor, color, opacity, borderRadius, shadow, ...rest }, ref) => (
     <SoftBoxRoot
       {...rest}
       ref={ref}
-      ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow }}
+      ownerState={{ overflow,variant, bgColor, color, opacity, borderRadius, shadow }}
     />
   )
 );
@@ -39,10 +39,12 @@ SoftBox.defaultProps = {
   opacity: 1,
   borderRadius: "none",
   shadow: "none",
+  overflow:""
 };
 
 // Typechecking props for the SoftBox
 SoftBox.propTypes = {
+  overflow: PropTypes.string,
   variant: PropTypes.oneOf(["contained", "gradient"]),
   bgColor: PropTypes.string,
   color: PropTypes.string,

@@ -5,10 +5,6 @@ import SoftTypography from "components/SoftTypography";
 import SoftAvatar from "components/SoftAvatar";
 import SoftBadge from "components/SoftBadge";
 
-// Images
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
-import team4 from "assets/images/team-4.jpg";
 
 function Author({ image, name, contact }) {
   return (
@@ -44,6 +40,7 @@ const authorsTableData = {
     { name: "职位", align: "left" },
     { name: "status", align: "center" },
     { name: "有效至", align: "center" },
+    { name: "参与次数", align: "center"},
     { name: "action", align: "center" },
   ],
 
@@ -57,6 +54,11 @@ const authorsTableData = {
       有效至: (
         <SoftTypography variant="caption" color="secondary" fontWeight="medium">
           12/31/2023
+        </SoftTypography>
+      ),
+      参与次数:(
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          30
         </SoftTypography>
       ),
       action: (
@@ -82,6 +84,11 @@ const authorsTableData = {
           12/31/2023
         </SoftTypography>
       ),
+      参与次数:(
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          30
+        </SoftTypography>
+      ),
       action: (
         <SoftTypography
           component="a"
@@ -103,6 +110,11 @@ const authorsTableData = {
       有效至: (
         <SoftTypography variant="caption" color="secondary" fontWeight="medium">
           12/31/2023
+        </SoftTypography>
+      ),
+      参与次数:(
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          30
         </SoftTypography>
       ),
       action: (
@@ -128,6 +140,11 @@ const authorsTableData = {
           12/31/2023
         </SoftTypography>
       ),
+      参与次数:(
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          30
+        </SoftTypography>
+      ),
       action: (
         <SoftTypography
           component="a"
@@ -151,115 +168,9 @@ const authorsTableData = {
           12/31/2023
         </SoftTypography>
       ),
-      action: (
-        <SoftTypography
-          component="a"
-          href="#"
-          variant="caption"
-          color="secondary"
-          fontWeight="medium"
-        >
-          Edit
-        </SoftTypography>
-      ),
-    },
-    {
-      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
-      职位: <Function job="成员" />,
-      status: (
-        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
-      ),
-      有效至: (
+      参与次数:(
         <SoftTypography variant="caption" color="secondary" fontWeight="medium">
-          08/31/2023
-        </SoftTypography>
-      ),
-      action: (
-        <SoftTypography
-          component="a"
-          href="#"
-          variant="caption"
-          color="secondary"
-          fontWeight="medium"
-        >
-          Edit
-        </SoftTypography>
-      ),
-    }, {
-      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
-      职位: <Function job="成员" />,
-      status: (
-        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
-      ),
-      有效至: (
-        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
-          08/31/2023
-        </SoftTypography>
-      ),
-      action: (
-        <SoftTypography
-          component="a"
-          href="#"
-          variant="caption"
-          color="secondary"
-          fontWeight="medium"
-        >
-          Edit
-        </SoftTypography>
-      ),
-    }, {
-      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
-      职位: <Function job="成员" />,
-      status: (
-        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
-      ),
-      有效至: (
-        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
-          08/31/2023
-        </SoftTypography>
-      ),
-      action: (
-        <SoftTypography
-          component="a"
-          href="#"
-          variant="caption"
-          color="secondary"
-          fontWeight="medium"
-        >
-          Edit
-        </SoftTypography>
-      ),
-    }, {
-      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
-      职位: <Function job="成员" />,
-      status: (
-        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
-      ),
-      有效至: (
-        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
-          08/31/2023
-        </SoftTypography>
-      ),
-      action: (
-        <SoftTypography
-          component="a"
-          href="#"
-          variant="caption"
-          color="secondary"
-          fontWeight="medium"
-        >
-          Edit
-        </SoftTypography>
-      ),
-    }, {
-      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
-      职位: <Function job="成员" />,
-      status: (
-        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
-      ),
-      有效至: (
-        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
-          08/31/2023
+          30
         </SoftTypography>
       ),
       action: (
@@ -274,6 +185,34 @@ const authorsTableData = {
         </SoftTypography>
       ),
     },
+   {
+      name: <Author image={""} name="Youngbald" contact="111-222-3333" />,
+      职位: <Function job="成员" />,
+      status: (
+        <SoftBadge variant="gradient" badgeContent="无效" color="secondary" size="xs" container />
+      ),
+      有效至: (
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          08/31/2023
+        </SoftTypography>
+      ),
+      参与次数:(
+        <SoftTypography variant="caption" color="secondary" fontWeight="medium">
+          30
+        </SoftTypography>
+      ),
+      action: (
+        <SoftTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Edit
+        </SoftTypography>
+      ),
+    }, 
   ],
 };
 

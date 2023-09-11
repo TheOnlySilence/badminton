@@ -25,9 +25,10 @@ import SoftTypography from "components/SoftTypography";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
-import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 import Transactions from "layouts/billing/components/Transactions";
+import TimelineItem from "examples/Timeline/TimelineItem";
+import TimelineList from "examples/Timeline/TimelineList";
 
 
 // Soft UI Dashboard React base styles
@@ -83,9 +84,9 @@ function Dashboard() {
             </Grid>
           </Grid>
         </SoftBox>
-        <SoftBox mb={3}>
+        <SoftBox mb={3} >
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={12}>
+            <Grid item xs={12} lg={8}>
               <GradientLineChart
                 title="Trend"
                 description={""
@@ -93,6 +94,34 @@ function Dashboard() {
                 height="20.25rem"
                 chart={gradientLineChartData}
               />
+            </Grid>
+            <Grid item xs={12} lg={4} height='100'>
+              <TimelineList title="Events" >
+              <TimelineItem
+                color="success"
+                icon="notifications"
+                title="$2400 Design changes"
+                dateTime="22 DEC 7:20 PM"
+                description="People care about how you see the world, how you think, what motivates you, what you’re struggling with or afraid of."
+                badges={["design"]}
+              />
+            <TimelineItem
+              color="error"
+              icon="inventory_2"
+              title="New order #1832412"
+              dateTime="21 DEC 11 PM"
+              description="People care about how you see the world, how you think, what motivates you, what you’re struggling with or afraid of."
+              badges={["order", "#1832412"]}
+            />  
+            <TimelineItem
+            icon="shopping_cart"
+            title="Server payments for April"
+            dateTime="21 DEC 9:34 PM"
+            description="People care about how you see the world, how you think, what motivates you, what you’re struggling with or afraid of."
+            badges={["server", "payments"]}
+            lastItem
+          />
+              </TimelineList>
             </Grid>
           </Grid>
         </SoftBox>

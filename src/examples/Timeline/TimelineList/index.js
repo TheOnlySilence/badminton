@@ -30,7 +30,7 @@ function TimelineList({ title, dark, children }) {
   return (
     <TimelineProvider value={dark}>
       <Card>
-        <SoftBox bgColor={dark ? "dark" : "white"} variant="gradient">
+        <SoftBox height="100%" overflow="scroll" bgColor={dark ? "dark" : "white"} variant="gradient">
           <SoftBox pt={3} px={3}>
             <SoftTypography variant="h6" fontWeight="medium" color={dark ? "white" : "dark"}>
               {title}

@@ -38,8 +38,8 @@ Coded by www.creative-tim.com
 // Soft UI Dashboard React layouts
 import Overview from "layouts/Overview";
 import Members from "layouts/members";
-import Profile from "layouts/profile/"
-
+import Profile from "layouts/profile/";
+import Queue from "layouts/Queue";
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
@@ -71,7 +71,16 @@ const routes = [
     icon: <Office size="12px" />,
     component: <Profile />,
     noCollapse: false,
-  }
+  },
+  {
+    type: "collapse",
+    name: "Queue",
+    key: "Queue",
+    route: "/queue",
+    icon: <Office size="12px" />,
+    component: <Queue />,
+    noCollapse: false,
+  },
 ];
 
 export default routes;
